@@ -13,16 +13,15 @@ sources:
   # Format:
   # [<Github account>:<osg-test branch>;] <OSG ver>; <REPO 1, REPO 2...REPO N> [> <Update OSG ver>/<Update REPO 1, REPO 2...REPO N>]
   # Example:
-  # Run osg-test (from 3.2-minefield) with packages from 3.2-release and 3.2-minefield that are then upgraded to
-  # 3.3-minefield and 3-3-upcoming-minefield:
-  # 3.2; osg, osg-minefield > 3.3/osg-minefield, osg-upcoming-minefield
+  # Run osg-test (from 3.2-minefield) with packages from 3.2-release and 3.2-testing that are then upgraded to
+  # 3.3-testing and 3-3-upcoming-testing:
+  # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - brianhlin:SOFTWARE-4614.condor-multi-config-dir; 3.6; osg-minefield
-  - brianhlin:SOFTWARE-4614.condor-multi-config-dir; 3.6; osg > osg-minefield
-  # - opensciencegrid:master; 3.6; osg, osg-upcoming
-  # - opensciencegrid:master; 3.6; osg, osg-upcoming, epel-minefield
-  # - opensciencegrid:master; 3.6; osg-minefield, osg-upcoming-minefield
-  # - opensciencegrid:master; 3.6; osg > osg-minefield, osg-upcoming-minefield
+  - matyasselmeci:pr/SOFTWARE-4607.el8-central-collector; 3.6; osg-testing
+  # - matyasselmeci:pr/SOFTWARE-4607.el8-central-collector; 3.6; osg, osg-upcoming
+  # - matyasselmeci:pr/SOFTWARE-4607.el8-central-collector; 3.6; osg, osg-upcoming, epel-testing
+  # - matyasselmeci:pr/SOFTWARE-4607.el8-central-collector; 3.6; osg-testing, osg-upcoming-testing
+  # - matyasselmeci:pr/SOFTWARE-4607.el8-central-collector; 3.6; osg > osg-testing, osg-upcoming-testing
 
 package_sets:
   #### Required ####
@@ -33,20 +32,6 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: Compute Entrypoint (3.6)
-    packages:
-      - osg-ce-condor
-      - htcondor-ce-view
-      - torque-server
-      - torque-mom
-      - torque-client
-      - torque-scheduler
-      - slurm
-      - slurm-slurmd
-      - slurm-slurmctld
-      - slurm-perlapi
-      - slurm-slurmdbd
-      - mariadb-server
   - label: Central Collector
     packages:
       - htcondor-ce-collector
