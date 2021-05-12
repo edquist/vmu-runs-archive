@@ -1,11 +1,12 @@
 ###################
-# OSG 3.6 tests
+# OSG 3.5 tests
 # File format documention:
 # https://github.com/opensciencegrid/vm-test-runs#running-osg-test-in-vm-universe
 ###################
 
 platforms:
-  - centos_8_x86_64
+  - centos_7_x86_64
+  - sl_7_x86_64
 
 sources:
   ###################
@@ -16,8 +17,8 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - opensciencegrid:master; 3.6; osg-minefield
-  - opensciencegrid:master; 3.6; osg > osg-minefield
+  - opensciencegrid:master; 3.5; osg-minefield
+  - opensciencegrid:master; 3.5; osg > osg-minefield
 
 package_sets:
   - label: htstuff
