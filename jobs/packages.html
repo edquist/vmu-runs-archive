@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OSG VMU Automated Test Results</title>
+    <link href="https://osg-sw-submit.chtc.wisc.edu/tests/vmu.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>OSG VMU Automated Test Results</h1>
+    <h2>20210601-1133: xrootd-hdfs-2.2.0-1.1.osg35up (matyas) </h2>
+    <p>
+      <a href="https://opensciencegrid.atlassian.net/issues/?filter=16926">
+        Known issues with osg-test
+        <br/>
+      </a>
+      <a href="https://jira.opensciencegrid.org/browse/SOFTWARE-2086">
+        OKSKIP tag to test module mapping
+        <br/>
+      </a>
+    </p>
+    <p>
+      <span class="legend pass">PASS</span>
+      <span class="legend fail">FAIL</span>
+      <span class="legend install">INSTALL</span>
+      <span class="legend update">UPDATE</span>
+      <span class="legend cleanup">CLEANUP</span>
+      <span class="legend ignore">IGNORE</span>
+      <span class="legend timeout">TIMEOUT</span>
+      <span class="legend die">DIE</span>
+      <span class="legend none">NONE</span>
+      <p>&#0153; = Yum timeout failure</p>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2" id="sort">
+            <span id="hide_text">Packages &#9660;</span>
+            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210601-1133/results.html" id="sort_link">Sort by Release &#9660;</a>
+          </th>
+          <th rowspan="2">OSG Release -> Upgrade</th>
+          <th colspan="2">EL7</th>
+        </tr>
+        <tr>
+          <th> CentOS </th>
+          <th> SL </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="divider"/>
+        </tr>
+        <tr>
+          <th rowspan="2" class="yheader" valign="top"/>
+          HDFS Plugins + xrootd-hdfs
+          <th class="yheader">
+            3.5 Minefield +  Upcoming-minefield (opensciencegrid:master)
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210601-1133/000/osg-test-20210601.log">51 120 1</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e355.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.155</br><b>Job ID:</b> 488599.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun May 30 00:40:30 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210601-1133/jobs/output-000</br><b>Guest IP</b>: 192.168.122.206</br><b>OSG Test Version</b>: git (e286e72)</br><b>OSG CA Gen Version</b>: git (0460622)</br><b>Start Time</b>: 2021-06-01 15:34:37</br><b>Run Time</b>: 4264.305s</br><b>OK Skips:</b> pbs (1), globus (13), voms (8), htcondor-ce (15), storage (4), xrootd (10)</br>oasis (6), htcondor (2), myproxy (5)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</div>
+              </div>
+            </td>
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210601-1133/002/osg-test-20210601.log">51 120 1</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e319.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.119</br><b>Job ID:</b> 488598.0</br><b>Job Serial</b>: 002</br><b>VM Creation Date</b>: Sun May 30 01:24:21 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210601-1133/jobs/output-002</br><b>Guest IP</b>: 192.168.122.133</br><b>OSG Test Version</b>: git (e286e72)</br><b>OSG CA Gen Version</b>: git (0460622)</br><b>Start Time</b>: 2021-06-01 13:03:31</br><b>Run Time</b>: 4920.259s</br><b>OK Skips:</b> pbs (1), globus (13), voms (8), htcondor-ce (15), storage (4), xrootd (10)</br>oasis (6), htcondor (2), myproxy (5)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</div>
+              </div>
+            </td>
+          </th>
+          <tr/>
+          <th class="yheader">
+            3.5 Testing +  Upcoming Testing -> 3.5 Minefield +  Upcoming-minefield (opensciencegrid:master)
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210601-1133/001/osg-test-20210601.log">51 120 1</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e2373.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.173</br><b>Job ID:</b> 488600.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun May 30 00:40:30 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210601-1133/jobs/output-001</br><b>Guest IP</b>: 192.168.122.142</br><b>OSG Test Version</b>: git (e286e72)</br><b>OSG CA Gen Version</b>: git (0460622)</br><b>Start Time</b>: 2021-06-01 11:48:35</br><b>Run Time</b>: 5043.664s</br><b>OK Skips:</b> pbs (1), globus (13), voms (8), htcondor-ce (15), storage (4), xrootd (10)</br>oasis (6), htcondor (2), myproxy (5)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</div>
+              </div>
+            </td>
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210601-1133/003/osg-test-20210601.log">51 120 1</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e2377.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.177</br><b>Job ID:</b> 488601.0</br><b>Job Serial</b>: 003</br><b>VM Creation Date</b>: Sun May 30 01:24:21 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210601-1133/jobs/output-003</br><b>Guest IP</b>: 192.168.122.132</br><b>OSG Test Version</b>: git (e286e72)</br><b>OSG CA Gen Version</b>: git (0460622)</br><b>Start Time</b>: 2021-06-01 12:06:29</br><b>Run Time</b>: 5272.563s</br><b>OK Skips:</b> pbs (1), globus (13), voms (8), htcondor-ce (15), storage (4), xrootd (10)</br>oasis (6), htcondor (2), myproxy (5)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</div>
+              </div>
+            </td>
+          </th>
+          <tr/>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
