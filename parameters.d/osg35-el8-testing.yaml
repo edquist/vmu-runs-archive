@@ -16,7 +16,8 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - matyasselmeci:pr/SOFTWARE-4607.el8-central-collector; 3.5; osg-development, osg-upcoming-development
+  - opensciencegrid:master; 3.5; osg-development
+  - opensciencegrid:master; 3.5; osg-development, osg-upcoming-development
 
 package_sets:
   #### Required ####
@@ -27,8 +28,11 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: Central Collector
+  - label: StashCache
     packages:
-      - htcondor-ce-collector
-      - htcondor-ce-view
-      - fetch-crl
+      - stashcache-client
+      - stash-cache
+      - stash-origin
+      - globus-proxy-utils
+      - gfal2-util
+      - gfal2-all
