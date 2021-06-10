@@ -16,17 +16,7 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - opensciencegrid:master; 3.5; osg
-  - opensciencegrid:master; 3.5; osg, epel-testing
-  - opensciencegrid:master; 3.5; osg > osg-testing
-#  - opensciencegrid:master; 3.5; osg
-#  - opensciencegrid:master; 3.5; osg-rolling
-#  - opensciencegrid:master; 3.5; osg-testing
-#  - opensciencegrid:master; 3.5; osg > osg-testing
-#  - opensciencegrid:master; 3.5; osg, osg-upcoming
-#  - opensciencegrid:master; 3.5; osg-rolling, osg-upcoming-rolling
-#  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-testing
-#  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-testing
+  - opensciencegrid:master; 3.5; osg > osg-minefield
 
 package_sets:
   #### Required ####
@@ -37,8 +27,6 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: Worker Node
+  - label: frontier-squid
     packages:
-      - osg-wn-client
-      - osg-oasis
-      - singularity
+      - frontier-squid
