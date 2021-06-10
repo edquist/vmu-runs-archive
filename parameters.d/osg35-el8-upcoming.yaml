@@ -17,7 +17,7 @@ sources:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
   - opensciencegrid:master; 3.5; osg-prerelease, osg-upcoming-prerelease
-  - opensciencegrid:master; 3.5; osg > osg-prerelease, osg-upcoming-prerelease
+  - opensciencegrid:master; 3.5; osg > osg-upcoming, osg-prerelease, osg-upcoming-prerelease
 
 package_sets:
   #### Required ####
