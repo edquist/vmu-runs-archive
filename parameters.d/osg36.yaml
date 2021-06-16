@@ -5,7 +5,8 @@
 ###################
 
 platforms:
-  - centos_8_x86_64
+  - centos_7_x86_64
+  - sl_7_x86_64
 
 sources:
   ###################
@@ -19,7 +20,6 @@ sources:
   - opensciencegrid:master; 3.6; osg-minefield
   - opensciencegrid:master; 3.6; osg > osg-minefield
   - opensciencegrid:master; 3.5; osg > 3.6/osg-minefield
-#  - opensciencegrid:master; 3.6; osg, osg-upcoming
 
 package_sets:
   #### Required ####

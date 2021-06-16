@@ -17,9 +17,9 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - opensciencegrid:master; 3.5; osg, osg-upcoming > osg-development, osg-upcoming-development
-  - opensciencegrid:master; 3.5; osg-development, osg-upcoming-development
-  - opensciencegrid:master; 3.5; osg > osg-development, osg-upcoming-development
+  - opensciencegrid:master; 3.5; osg-minefield
+  - opensciencegrid:master; 3.5; osg > osg-minefield
+  - opensciencegrid:master; 3.4; osg > 3.5/osg-minefield
 
 package_sets:
   #### Required ####
@@ -30,13 +30,6 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: XRootD
+  - label: vo-client
     packages:
-      - osg-xrootd-standalone
-      - xrootd-multiuser
-      - xrootd-client
-      - xrootd-fuse
-      - xrootd-scitokens
-      - globus-proxy-utils
-      - osg-gridftp-xrootd
-      - x509-scitokens-issuer-client
+      - vo-client
