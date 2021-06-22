@@ -6,6 +6,7 @@
 
 platforms:
   - centos_8_x86_64
+  - centos_7_x86_64
 
 sources:
   ###################
@@ -16,6 +17,7 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
+  - opensciencegrid:master; 3.5; osg-testing
   - opensciencegrid:master; 3.5; osg-development
   - opensciencegrid:master; 3.5; osg-development, osg-upcoming-development
 
