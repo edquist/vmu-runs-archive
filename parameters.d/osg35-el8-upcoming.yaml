@@ -6,7 +6,7 @@
 
 platforms:
   - centos_8_x86_64
-  - centos_8_stream_x86_64
+  - centos_stream_8_x86_64
 
 sources:
   ###################
@@ -18,10 +18,6 @@ sources:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
   - opensciencegrid:master; 3.5; osg, osg-upcoming
-  - opensciencegrid:master; 3.5; osg, osg-upcoming, epel-testing
-  - opensciencegrid:master; 3.5; osg-rolling, osg-upcoming-rolling
-  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-testing
-  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-testing
 
 package_sets:
   #### Required ####

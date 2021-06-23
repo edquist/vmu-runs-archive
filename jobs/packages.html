@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OSG VMU Automated Test Results</title>
+    <link href="https://osg-sw-submit.chtc.wisc.edu/tests/vmu.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>OSG VMU Automated Test Results</h1>
+    <h2>20210622-2206: stream? (matyas) </h2>
+    <p>
+      <a href="https://opensciencegrid.atlassian.net/issues/?filter=16926">
+        Known issues with osg-test
+        <br/>
+      </a>
+      <a href="https://jira.opensciencegrid.org/browse/SOFTWARE-2086">
+        OKSKIP tag to test module mapping
+        <br/>
+      </a>
+    </p>
+    <p>
+      <span class="legend pass">PASS</span>
+      <span class="legend fail">FAIL</span>
+      <span class="legend install">INSTALL</span>
+      <span class="legend update">UPDATE</span>
+      <span class="legend cleanup">CLEANUP</span>
+      <span class="legend ignore">IGNORE</span>
+      <span class="legend timeout">TIMEOUT</span>
+      <span class="legend die">DIE</span>
+      <span class="legend none">NONE</span>
+      <p>&#0153; = Yum timeout failure</p>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2" id="sort">
+            <span id="hide_text">Packages &#9660;</span>
+            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210622-2206/results.html" id="sort_link">Sort by Release &#9660;</a>
+          </th>
+          <th rowspan="2">OSG Release -> Upgrade</th>
+          <th colspan="2">EL8</th>
+        </tr>
+        <tr>
+          <th> CentOS </th>
+          <th> Stream </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="divider"/>
+        </tr>
+        <tr>
+          <th rowspan="1" class="yheader" valign="top"/>
+          Compute Entrypoint (no Torque)
+          <th class="yheader">
+            3.5 Release +  Upcoming (opensciencegrid:master)
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210622-2206/000/osg-test-20210622.log">65 104 3</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e2413.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.213</br><b>Job ID:</b> 513718.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Jun 20 01:02:33 CDT 2021</br><b>VM IO Free Space</b>: 7.7M</br><b>Run Dir</b>: /osgtest/runs/run-20210622-2206/jobs/output-000</br><b>Guest IP</b>: 192.168.122.14</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-06-22 22:14:34</br><b>Run Time</b>: 1173.069s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 550.CondorCE (03_ping): -</br><b>&emsp;FAIL</b> 550.CondorCE (04_trace): -</br><b>&emsp;FAIL</b> 550.CondorCE (06_slurm_trace): -</div>
+              </div>
+            </td>
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210622-2206/001/osg-test-20210622.log">65 104 3</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e349.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.149</br><b>Job ID:</b> 513719.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Jun 20 01:48:32 CDT 2021</br><b>VM IO Free Space</b>: 7.7M</br><b>Run Dir</b>: /osgtest/runs/run-20210622-2206/jobs/output-001</br><b>Guest IP</b>: 192.168.122.24</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-06-22 22:14:02</br><b>Run Time</b>: 1319.68s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 550.CondorCE (03_ping): -</br><b>&emsp;FAIL</b> 550.CondorCE (04_trace): -</br><b>&emsp;FAIL</b> 550.CondorCE (06_slurm_trace): -</div>
+              </div>
+            </td>
+          </th>
+          <tr/>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
