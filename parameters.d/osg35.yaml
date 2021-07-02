@@ -17,17 +17,8 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - opensciencegrid:master; 3.5; osg
-  - opensciencegrid:master; 3.5; osg, epel-testing
-  - opensciencegrid:master; 3.5; osg-rolling
-  - opensciencegrid:master; 3.5; osg-testing
-  - opensciencegrid:master; 3.5; osg > osg-testing
-  - opensciencegrid:master; 3.4; osg > 3.5/osg
-  - opensciencegrid:master; 3.5; osg, osg-upcoming
-  - opensciencegrid:master; 3.5; osg, osg-upcoming, epel-testing
-  - opensciencegrid:master; 3.5; osg-rolling, osg-upcoming-rolling
-  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-testing
-  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-testing
+  - opensciencegrid:master; 3.5; osg-development, osg-upcoming-development
+  - opensciencegrid:master; 3.5; osg, osg-upcoming > osg-development, osg-upcoming-development
 
 package_sets:
   #### Required ####
@@ -38,31 +29,6 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: Compute Entrypoint
-    packages:
-      - osg-ce-condor
-      - htcondor-ce-view
-      - torque-server
-      - torque-mom
-      - torque-client
-      - torque-scheduler
-      - slurm
-      - slurm-slurmd
-      - slurm-slurmctld
-      - slurm-perlapi
-      - slurm-slurmdbd
-      - mariadb-server
-      - globus-proxy-utils
-  - label: Central Collector
-    packages:
-      - htcondor-ce-collector
-      - htcondor-ce-view
-      - fetch-crl
-  - label: Worker Node
-    packages:
-      - osg-wn-client
-      - osg-oasis
-      - singularity
   - label: StashCache
     packages:
       - stashcache-client
@@ -98,27 +64,3 @@ package_sets:
       - lcmaps-db-templates
       - vo-client-lcmaps-voms
       - globus-proxy-utils # proxy required for all transfer tests
-  - label: GSI OpenSSH
-    packages:
-      - gsi-openssh-server
-      - gsi-openssh-clients
-  # Disabled until SOFTWARE-4374 is addressed
-  # - label: MyProxy
-  #   packages:
-  #     - myproxy
-  #     - myproxy-server
-  - label: VOMS
-    packages:
-      - voms-server
-      - voms-clients-cpp
-      - voms-mysql-plugin
-      - mariadb
-      - mariadb-server
-  ###########################
-  #- label: GlideinwmsFrontend
-  #  packages:
-  #    - glideinwms-vofrontend
-  #- label: GlideinwmsFactory
-  #  packages:
-  #    - glideinwms-factory
-
