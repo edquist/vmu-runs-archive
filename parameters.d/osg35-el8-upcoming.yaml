@@ -14,20 +14,11 @@ sources:
   # Format:
   # [<Github account>:<osg-test branch>;] <OSG ver>; <REPO 1, REPO 2...REPO N> [> <Update OSG ver>/<Update REPO 1, REPO 2...REPO N>]
   # Example:
-  # Run osg-test (from 3.2-minefield) with packages from 3.2-release and 3.2-testing that are then upgraded to
-  # 3.3-testing and 3-3-upcoming-testing:
-  # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
+  # Run osg-test (from 3.2-minefield) with packages from 3.2-release and 3.2-minefield that are then upgraded to
+  # 3.3-minefield and 3-3-upcoming-minefield:
+  # 3.2; osg, osg-minefield > 3.3/osg-minefield, osg-upcoming-minefield
   ###################
-  - opensciencegrid:master; 3.5; osg
-  - opensciencegrid:master; 3.5; osg, epel-testing
-  - opensciencegrid:master; 3.5; osg-rolling
-  - opensciencegrid:master; 3.5; osg-testing
-  - opensciencegrid:master; 3.5; osg > osg-testing
-  - opensciencegrid:master; 3.5; osg, osg-upcoming
-  - opensciencegrid:master; 3.5; osg, osg-upcoming, epel-testing
-  - opensciencegrid:master; 3.5; osg-rolling, osg-upcoming-rolling
-  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-testing
-  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-testing
+  - opensciencegrid:master; 3.5; osg-minefield, osg-upcoming-minefield
 
 package_sets:
   #### Required ####
@@ -38,8 +29,14 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: Worker Node
+  - label: Compute Entrypoint (no Torque)
     packages:
-      - osg-wn-client
-      - osg-oasis
-      - singularity
+      - osg-ce-condor
+      - htcondor-ce-view
+      - slurm
+      - slurm-slurmd
+      - slurm-slurmctld
+      - slurm-perlapi
+      - slurm-slurmdbd
+      - mariadb-server
+      - globus-proxy-utils
