@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>OSG VMU Automated Test Results</h1>
-    <h2>20210720-0831: condor devops-itb take II (edquist) </h2>
+    <h2>20210720-1634: osg-xrootd-3.6 (SOFTWARE-4495) (blin) </h2>
     <p>
       <a href="https://opensciencegrid.atlassian.net/issues/?filter=16926">
         Known issues with osg-test
@@ -35,7 +35,7 @@
         <tr>
           <th rowspan="2" id="sort">
             <span id="hide_text">OSG Release -> Upgrade &#9660;</span>
-            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/packages.html" id="sort_link">Sort by Package &#9660;</a>
+            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/packages.html" id="sort_link">Sort by Package &#9660;</a>
           </th>
           <th rowspan="2">Packages</th>
           <th colspan="2">EL7</th>
@@ -54,124 +54,92 @@
           <td class="divider"/>
         </tr>
         <tr>
-          <th rowspan="4" class="yheader" valign="top"/>
-          3.5 Upcoming +  devops-itb (opensciencegrid:master)
+          <th rowspan="2" class="yheader" valign="top"/>
+          3.6 Minefield (opensciencegrid:master)
           <th class="yheader">
-            Central Collector
-            <td align="center" class="result pass">
+            StashCache (3.6)
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/001/osg-test-20210720.log">36 136 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/000/osg-test-20210720.log">84 78 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e321.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.121</br><b>Job ID:</b> 563002.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-001</br><b>Guest IP</b>: 192.168.122.20</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:52:36</br><b>Run Time</b>: 565.499s</br><b>OK Skips:</b> pbs (1), globus (20), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>oasis (6), htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e316.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.116</br><b>Job ID:</b> 563135.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-000</br><b>Guest IP</b>: 192.168.122.210</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:46:52</br><b>Run Time</b>: 484.167s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/010/osg-test-20210720.log">36 136 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/004/osg-test-20210720.log">84 78 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e283.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.83</br><b>Job ID:</b> 562994.0</br><b>Job Serial</b>: 010</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-010</br><b>Guest IP</b>: 192.168.122.46</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:22</br><b>Run Time</b>: 1201.779s</br><b>OK Skips:</b> pbs (1), globus (20), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>oasis (6), htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e2333.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.133</br><b>Job ID:</b> 563125.0</br><b>Job Serial</b>: 004</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-004</br><b>Guest IP</b>: 192.168.122.48</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:46:36</br><b>Run Time</b>: 576.127s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Compute Entrypoint
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/000/osg-test-20210720.log">79 93 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/012/osg-test-20210720.log">84 78 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2453.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.253</br><b>Job ID:</b> 562991.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-000</br><b>Guest IP</b>: 192.168.122.133</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:46:58</br><b>Run Time</b>: 895.157s</br><b>OK Skips:</b> oasis (6), myproxy (5), globus (13), voms (8), storage (4), xrootd (12)</div>
+                <div class="mouseover"><b>Hostname</b>: e290.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.90</br><b>Job ID:</b> 563132.0</br><b>Job Serial</b>: 012</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-012</br><b>Guest IP</b>: 192.168.122.64</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:45:49</br><b>Run Time</b>: 524.199s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/009/osg-test-20210720.log">79 93 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/008/osg-test-20210720.log">84 78 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e290.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.90</br><b>Job ID:</b> 562996.0</br><b>Job Serial</b>: 009</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 7.8M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-009</br><b>Guest IP</b>: 192.168.122.220</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:43</br><b>Run Time</b>: 971.352s</br><b>OK Skips:</b> oasis (6), myproxy (5), globus (13), voms (8), storage (4), xrootd (12)</div>
+                <div class="mouseover"><b>Hostname</b>: e400.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.200</br><b>Job ID:</b> 563133.0</br><b>Job Serial</b>: 008</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-008</br><b>Guest IP</b>: 192.168.122.214</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:47:12</br><b>Run Time</b>: 450.096s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Compute Entrypoint (no Torque)
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/021/osg-test-20210720.log">68 104 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/016/osg-test-20210720.log">84 78 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2360.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.160</br><b>Job ID:</b> 562995.0</br><b>Job Serial</b>: 021</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.6M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-021</br><b>Guest IP</b>: 192.168.122.14</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:50</br><b>Run Time</b>: 826.129s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/018/osg-test-20210720.log">68 104 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2350.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.150</br><b>Job ID:</b> 562990.0</br><b>Job Serial</b>: 018</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 7.6M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-018</br><b>Guest IP</b>: 192.168.122.56</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:07</br><b>Run Time</b>: 822.929s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/024/osg-test-20210720.log">68 104 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e303.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.103</br><b>Job ID:</b> 563007.0</br><b>Job Serial</b>: 024</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 7.7M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-024</br><b>Guest IP</b>: 192.168.122.42</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:49:46</br><b>Run Time</b>: 760.78s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e449.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.249</br><b>Job ID:</b> 563130.0</br><b>Job Serial</b>: 016</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-016</br><b>Guest IP</b>: 192.168.122.61</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:50:29</br><b>Run Time</b>: 580.334s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
           </th>
           <tr/>
           <th class="yheader">
-            Worker Node
-            <td align="center" class="result pass">
+            XRootD (3.6)
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/002/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/001/osg-test-20210720.log">77 87 8</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e302.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.102</br><b>Job ID:</b> 563001.0</br><b>Job Serial</b>: 002</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-002</br><b>Guest IP</b>: 192.168.122.186</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:55</br><b>Run Time</b>: 456.382s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e269.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.69</br><b>Job ID:</b> 563119.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-001</br><b>Guest IP</b>: 192.168.122.182</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:52:02</br><b>Run Time</b>: 2270.931s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;ERROR</b> 840.StopXrootd (01_stop_xrootd): -</br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/011/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/005/osg-test-20210720.log">0 0 0</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e320.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.120</br><b>Job ID:</b> 562987.0</br><b>Job Serial</b>: 011</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-011</br><b>Guest IP</b>: 192.168.122.116</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:44:56</br><b>Run Time</b>: 513.781s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e443.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.243</br><b>Job ID:</b> 563128.0</br><b>Job Serial</b>: 005</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.6M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-005</br><b>Guest IP</b>: 192.168.122.121</br><b>OSG Test Version</b>: git ()</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: None</br><b>Run Time</b>: 0.0s</br><b>OK Skips:</b> </div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/030/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/013/osg-test-20210720.log">77 87 8</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e443.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.243</br><b>Job ID:</b> 563016.0</br><b>Job Serial</b>: 030</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-030</br><b>Guest IP</b>: 192.168.122.131</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:56:23</br><b>Run Time</b>: 920.457s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e2337.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.137</br><b>Job ID:</b> 563122.0</br><b>Job Serial</b>: 013</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.8M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-013</br><b>Guest IP</b>: 192.168.122.54</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:43:59</br><b>Run Time</b>: 1876.061s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;ERROR</b> 840.StopXrootd (01_stop_xrootd): -</br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/027/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/009/osg-test-20210720.log">77 87 8</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e273.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.73</br><b>Job ID:</b> 563006.0</br><b>Job Serial</b>: 027</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-027</br><b>Guest IP</b>: 192.168.122.73</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:49:03</br><b>Run Time</b>: 543.363s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e389.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.189</br><b>Job ID:</b> 563123.0</br><b>Job Serial</b>: 009</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 7.8M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-009</br><b>Guest IP</b>: 192.168.122.214</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:49:30</br><b>Run Time</b>: 1791.526s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;ERROR</b> 840.StopXrootd (01_stop_xrootd): -</br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/033/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/017/osg-test-20210720.log">77 87 8</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2007.chtc.wisc.edu</br><b>Host IP</b>: 128.105.68.14</br><b>Job ID:</b> 563010.0</br><b>Job Serial</b>: 033</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-033</br><b>Guest IP</b>: 192.168.122.77</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:49:08</br><b>Run Time</b>: 365.175s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e2333.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.133</br><b>Job ID:</b> 563126.0</br><b>Job Serial</b>: 017</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-017</br><b>Guest IP</b>: 192.168.122.180</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:47:13</br><b>Run Time</b>: 1787.778s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;ERROR</b> 840.StopXrootd (01_stop_xrootd): -</br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
               </div>
             </td>
           </th>
@@ -181,251 +149,92 @@
           <td class="divider"/>
         </tr>
         <tr>
-          <th rowspan="4" class="yheader" valign="top"/>
-          3.5 devops -> 3.5 Upcoming +  devops-itb (opensciencegrid:master)
+          <th rowspan="2" class="yheader" valign="top"/>
+          3.5 Release -> 3.6 Minefield (opensciencegrid:master)
           <th class="yheader">
-            Central Collector
-            <td align="center" class="result install">
+            StashCache (3.6)
+            <td align="center" class="result pass">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/004/osg-test-20210720.log">INSTALL</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/002/osg-test-20210720.log">75 97 0</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2007.chtc.wisc.edu</br><b>Host IP</b>: 128.105.68.14</br><b>Job ID:</b> 562986.0</br><b>Job Serial</b>: 004</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.4M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-004</br><b>Guest IP</b>: 192.168.122.140</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:42:46</br><b>Run Time</b>: 51.764s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</div>
+                <div class="mouseover"><b>Hostname</b>: e449.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.249</br><b>Job ID:</b> 563137.0</br><b>Job Serial</b>: 002</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-002</br><b>Guest IP</b>: 192.168.122.19</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:51:56</br><b>Run Time</b>: 603.132s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (12)</div>
               </div>
             </td>
-            <td align="center" class="result install">
+            <td align="center" class="result pass">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/013/osg-test-20210720.log">INSTALL</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/006/osg-test-20210720.log">75 97 0</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2007.chtc.wisc.edu</br><b>Host IP</b>: 128.105.68.14</br><b>Job ID:</b> 562999.0</br><b>Job Serial</b>: 013</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-013</br><b>Guest IP</b>: 192.168.122.38</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:45:57</br><b>Run Time</b>: 60.791s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</div>
-              </div>
-            </td>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Compute Entrypoint
-            <td align="center" class="result die">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/003/run-job.log">DIED</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2387.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.187</br><b>Job ID:</b> 562998.0</br><b>Job Serial</b>: 003</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>Run Summary</b>: No apparent IP address</div>
+                <div class="mouseover"><b>Hostname</b>: e308.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.108</br><b>Job ID:</b> 563129.0</br><b>Job Serial</b>: 006</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-006</br><b>Guest IP</b>: 192.168.122.56</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:51:59</br><b>Run Time</b>: 1358.373s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (12)</div>
               </div>
             </td>
             <td align="center" class="result install">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/012/osg-test-20210720.log">INSTALL</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/014/osg-test-20210720.log">INSTALL</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2361.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.161</br><b>Job ID:</b> 562985.0</br><b>Job Serial</b>: 012</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-012</br><b>Guest IP</b>: 192.168.122.175</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:46:32</br><b>Run Time</b>: 335.085s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</div>
-              </div>
-            </td>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Compute Entrypoint (no Torque)
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result die">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/022/run-job.log">DIED</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2387.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.187</br><b>Job ID:</b> 563011.0</br><b>Job Serial</b>: 022</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>Run Summary</b>: No apparent IP address</div>
+                <div class="mouseover"><b>Hostname</b>: e325.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.125</br><b>Job ID:</b> 563127.0</br><b>Job Serial</b>: 014</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-014</br><b>Guest IP</b>: 192.168.122.168</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:45:25</br><b>Run Time</b>: 129.218s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (03_update_osg_release): Install did not succeed</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</br><b>&emsp;SKIP</b> Cleanup (01_downgrade_osg_release): release not updated</div>
               </div>
             </td>
             <td align="center" class="result install">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/019/osg-test-20210720.log">INSTALL</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/010/osg-test-20210720.log">INSTALL</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2427.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.227</br><b>Job ID:</b> 562982.0</br><b>Job Serial</b>: 019</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-019</br><b>Guest IP</b>: 192.168.122.72</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:44:50</br><b>Run Time</b>: 357.817s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</div>
+                <div class="mouseover"><b>Hostname</b>: e2010.chtc.wisc.edu</br><b>Host IP</b>: 128.105.244.108</br><b>Job ID:</b> 563124.0</br><b>Job Serial</b>: 010</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-010</br><b>Guest IP</b>: 192.168.122.52</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:42:42</br><b>Run Time</b>: 63.546s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (03_update_osg_release): Install did not succeed</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</br><b>&emsp;SKIP</b> Cleanup (01_downgrade_osg_release): release not updated</div>
               </div>
             </td>
             <td align="center" class="result install">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/025/osg-test-20210720.log">INSTALL</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/018/osg-test-20210720.log">INSTALL</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e269.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.69</br><b>Job ID:</b> 563008.0</br><b>Job Serial</b>: 025</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-025</br><b>Guest IP</b>: 192.168.122.155</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:57:25</br><b>Run Time</b>: 822.004s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;FAIL</b> 290.StartSlurm (02_start_slurmdbd): -</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</div>
+                <div class="mouseover"><b>Hostname</b>: e265.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.65</br><b>Job ID:</b> 563118.0</br><b>Job Serial</b>: 018</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-018</br><b>Guest IP</b>: 192.168.122.112</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:43:08</br><b>Run Time</b>: 120.492s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (03_update_osg_release): Install did not succeed</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</br><b>&emsp;SKIP</b> Cleanup (01_downgrade_osg_release): release not updated</div>
               </div>
             </td>
           </th>
           <tr/>
           <th class="yheader">
-            Worker Node
-            <td align="center" class="result pass">
+            XRootD (3.6)
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/005/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/003/osg-test-20210720.log">73 96 3</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e267.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.67</br><b>Job ID:</b> 562993.0</br><b>Job Serial</b>: 005</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-005</br><b>Guest IP</b>: 192.168.122.217</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:05</br><b>Run Time</b>: 503.003s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e269.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.69</br><b>Job ID:</b> 563120.0</br><b>Job Serial</b>: 003</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-003</br><b>Guest IP</b>: 192.168.122.156</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:51:59</br><b>Run Time</b>: 848.593s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (9)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/014/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/007/osg-test-20210720.log">73 96 3</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2427.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.227</br><b>Job ID:</b> 562997.0</br><b>Job Serial</b>: 014</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-014</br><b>Guest IP</b>: 192.168.122.43</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:48</br><b>Run Time</b>: 518.024s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e325.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.125</br><b>Job ID:</b> 563136.0</br><b>Job Serial</b>: 007</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-007</br><b>Guest IP</b>: 192.168.122.120</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:46:45</br><b>Run Time</b>: 413.255s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (9)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result install">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/031/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/015/osg-test-20210720.log">INSTALL</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2426.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.226</br><b>Job ID:</b> 562992.0</br><b>Job Serial</b>: 031</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-031</br><b>Guest IP</b>: 192.168.122.143</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:56</br><b>Run Time</b>: 704.887s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e262.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.62</br><b>Job ID:</b> 563131.0</br><b>Job Serial</b>: 015</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-015</br><b>Guest IP</b>: 192.168.122.165</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:47:04</br><b>Run Time</b>: 150.08s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (03_update_osg_release): Install did not succeed</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</br><b>&emsp;SKIP</b> Cleanup (01_downgrade_osg_release): release not updated</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result install">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/028/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/011/osg-test-20210720.log">INSTALL</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e289.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.89</br><b>Job ID:</b> 563009.0</br><b>Job Serial</b>: 028</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-028</br><b>Guest IP</b>: 192.168.122.35</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:49:34</br><b>Run Time</b>: 491.264s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e289.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.89</br><b>Job ID:</b> 563121.0</br><b>Job Serial</b>: 011</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.1M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-011</br><b>Guest IP</b>: 192.168.122.74</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:43:28</br><b>Run Time</b>: 193.456s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (03_update_osg_release): Install did not succeed</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</br><b>&emsp;SKIP</b> Cleanup (01_downgrade_osg_release): release not updated</div>
               </div>
             </td>
-            <td align="center" class="result pass">
+            <td align="center" class="result install">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/034/osg-test-20210720.log">43 129 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-1634/019/osg-test-20210720.log">INSTALL</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2353.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.153</br><b>Job ID:</b> 563014.0</br><b>Job Serial</b>: 034</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-034</br><b>Guest IP</b>: 192.168.122.208</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:54:53</br><b>Run Time</b>: 798.156s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-          </th>
-          <tr/>
-        </tr>
-        <tr>
-          <td class="divider"/>
-        </tr>
-        <tr>
-          <th rowspan="4" class="yheader" valign="top"/>
-          3.5 Upcoming +  devops -> 3.5 Upcoming +  devops-itb (opensciencegrid:master)
-          <th class="yheader">
-            Central Collector
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/007/osg-test-20210720.log">36 136 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2397.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.197</br><b>Job ID:</b> 562983.0</br><b>Job Serial</b>: 007</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-007</br><b>Guest IP</b>: 192.168.122.56</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:44:43</br><b>Run Time</b>: 393.529s</br><b>OK Skips:</b> pbs (1), globus (20), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>oasis (6), htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/016/osg-test-20210720.log">36 136 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e268.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.68</br><b>Job ID:</b> 563003.0</br><b>Job Serial</b>: 016</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-016</br><b>Guest IP</b>: 192.168.122.244</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:48:01</br><b>Run Time</b>: 408.969s</br><b>OK Skips:</b> pbs (1), globus (20), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>oasis (6), htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Compute Entrypoint
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/006/osg-test-20210720.log">79 93 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e284.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.84</br><b>Job ID:</b> 562981.0</br><b>Job Serial</b>: 006</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 7.8M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-006</br><b>Guest IP</b>: 192.168.122.134</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:43:43</br><b>Run Time</b>: 1021.44s</br><b>OK Skips:</b> oasis (6), myproxy (5), globus (13), voms (8), storage (4), xrootd (12)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/015/osg-test-20210720.log">79 93 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e307.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.107</br><b>Job ID:</b> 563000.0</br><b>Job Serial</b>: 015</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 7.8M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-015</br><b>Guest IP</b>: 192.168.122.133</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:47:42</br><b>Run Time</b>: 1065.265s</br><b>OK Skips:</b> oasis (6), myproxy (5), globus (13), voms (8), storage (4), xrootd (12)</div>
-              </div>
-            </td>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Compute Entrypoint (no Torque)
-            <td align="center" class="result none"/>
-            <td align="center" class="result none"/>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/023/osg-test-20210720.log">68 104 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2350.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.150</br><b>Job ID:</b> 563005.0</br><b>Job Serial</b>: 023</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.6M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-023</br><b>Guest IP</b>: 192.168.122.176</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:48:55</br><b>Run Time</b>: 930.416s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/020/osg-test-20210720.log">68 104 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2361.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.161</br><b>Job ID:</b> 562984.0</br><b>Job Serial</b>: 020</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 7.6M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-020</br><b>Guest IP</b>: 192.168.122.244</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:46:34</br><b>Run Time</b>: 958.659s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/026/osg-test-20210720.log">68 104 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2292.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.92</br><b>Job ID:</b> 563004.0</br><b>Job Serial</b>: 026</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 7.7M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-026</br><b>Guest IP</b>: 192.168.122.212</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:52:03</br><b>Run Time</b>: 1590.489s</br><b>OK Skips:</b> globus (14), voms (8), htcondor-ce (1), storage (4), xrootd (12), oasis (6)</br>htcondor (1), myproxy (5)</div>
-              </div>
-            </td>
-          </th>
-          <tr/>
-          <th class="yheader">
-            Worker Node
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/008/osg-test-20210720.log">43 129 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e391.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.191</br><b>Job ID:</b> 562989.0</br><b>Job Serial</b>: 008</br><b>VM Creation Date</b>: Sun Jul 18 00:40:57 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-008</br><b>Guest IP</b>: 192.168.122.105</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:50:08</br><b>Run Time</b>: 636.693s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/017/osg-test-20210720.log">43 129 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e391.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.191</br><b>Job ID:</b> 562988.0</br><b>Job Serial</b>: 017</br><b>VM Creation Date</b>: Sun Jul 18 01:26:39 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-017</br><b>Guest IP</b>: 192.168.122.222</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:49:45</br><b>Run Time</b>: 665.208s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/032/osg-test-20210720.log">43 129 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e269.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.69</br><b>Job ID:</b> 563015.0</br><b>Job Serial</b>: 032</br><b>VM Creation Date</b>: Sun Jul 18 01:50:21 CDT 2021</br><b>VM IO Free Space</b>: 7.9M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-032</br><b>Guest IP</b>: 192.168.122.253</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 09:00:14</br><b>Run Time</b>: 1130.069s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/029/osg-test-20210720.log">43 129 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e342.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.142</br><b>Job ID:</b> 563013.0</br><b>Job Serial</b>: 029</br><b>VM Creation Date</b>: Sun Jul 18 01:03:09 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-029</br><b>Guest IP</b>: 192.168.122.94</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:52:06</br><b>Run Time</b>: 528.509s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
-              </div>
-            </td>
-            <td align="center" class="result pass">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210720-0831/035/osg-test-20210720.log">43 129 0</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e280.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.80</br><b>Job ID:</b> 563012.0</br><b>Job Serial</b>: 035</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-0831/jobs/output-035</br><b>Guest IP</b>: 192.168.122.41</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 08:52:49</br><b>Run Time</b>: 911.126s</br><b>OK Skips:</b> pbs (1), globus (15), voms (8), htcondor-ce (15), storage (4), xrootd (12)</br>htcondor (2), myproxy (5)</div>
+                <div class="mouseover"><b>Hostname</b>: e309.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.109</br><b>Job ID:</b> 563134.0</br><b>Job Serial</b>: 019</br><b>VM Creation Date</b>: Sun Jul 18 02:09:05 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210720-1634/jobs/output-019</br><b>Guest IP</b>: 192.168.122.180</br><b>OSG Test Version</b>: git (2408461)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-07-20 16:46:18</br><b>Run Time</b>: 197.131s</br><b>Failures:</b></br><b>&emsp;FAIL</b> Install (02_install_packages): -</br><b>&emsp;SKIP</b> Install (03_update_osg_release): Install did not succeed</br><b>&emsp;SKIP</b> Install (04_update_packages): Install did not succeed</br><b>&emsp;SKIP</b> Cleanup (01_downgrade_osg_release): release not updated</div>
               </div>
             </td>
           </th>
