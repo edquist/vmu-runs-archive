@@ -5,8 +5,9 @@
 ###################
 
 platforms:
-  - centos_7_x86_64
-  - sl_7_x86_64
+  - centos_8_x86_64
+  - centos_stream_8_x86_64
+  - rocky_8_x86_64
 
 sources:
   - opensciencegrid:master; 3.6; osg-minefield
@@ -15,14 +16,10 @@ sources:
   - opensciencegrid:master; 3.6; osg > osg-testing, osg-upcoming-minefield
 
 package_sets:
-  - label: Compute Entrypoint (no Globus)
+  - label: Compute Entrypoint (no Globus/Torque)
     packages:
       - osg-ce-condor
       - htcondor-ce-view
-      - torque-server
-      - torque-mom
-      - torque-client
-      - torque-scheduler
       - slurm
       - slurm-slurmd
       - slurm-slurmctld

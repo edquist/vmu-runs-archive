@@ -1,0 +1,23 @@
+###################
+# OSG 3.5 tests
+# File format documention:
+# https://github.com/opensciencegrid/vm-test-runs#running-osg-test-in-vm-universe
+###################
+
+platforms:
+  - centos_8_x86_64
+  - centos_stream_8_x86_64
+  - rocky_8_x86_64
+
+sources:
+  - opensciencegrid:master; 3.5; osg-minefield
+  - opensciencegrid:master; 3.5; osg-testing > osg-minefield
+  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-minefield
+  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-minefield
+  - opensciencegrid:master; 3.5; osg-development, osg-upcoming-minefield
+  - opensciencegrid:master; 3.5; osg > osg-development, osg-upcoming-minefield
+
+package_sets:
+  - label: condor
+    packages:
+      - condor
