@@ -1,5 +1,5 @@
 ###################
-# OSG 3.5 tests
+# OSG 3.6 tests
 # File format documention:
 # https://github.com/opensciencegrid/vm-test-runs#running-osg-test-in-vm-universe
 ###################
@@ -18,9 +18,8 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - opensciencegrid:master; 3.5; osg-upcoming, devops-itb
-  - opensciencegrid:master; 3.5; devops > osg-upcoming, devops-itb
-  - opensciencegrid:master; 3.5; osg-upcoming, devops > osg-upcoming, devops-itb
+  - opensciencegrid:master; 3.6; osg-minefield, osg-upcoming-minefield
+  - opensciencegrid:master; 3.6; osg > osg-minefield, osg-upcoming-minefield
 
 package_sets:
   #### Required ####
@@ -31,7 +30,7 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: Compute Entrypoint (no Torque)
+  - label: Compute Entrypoint (no Globus/Torque)
     packages:
       - osg-ce-condor
       - htcondor-ce-view
@@ -41,4 +40,3 @@ package_sets:
       - slurm-perlapi
       - slurm-slurmdbd
       - mariadb-server
-      - globus-proxy-utils
