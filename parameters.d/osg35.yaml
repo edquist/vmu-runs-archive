@@ -17,8 +17,8 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - opensciencegrid:master; 3.5; osg-minefield, osg-upcoming-minefield
-  - opensciencegrid:master; 3.5; osg > osg-minefield, osg-upcoming-minefield
+  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-testing, devops-itb
+  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-testing, devops-itb
 
 package_sets:
   #### Required ####
