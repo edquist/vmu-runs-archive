@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>OSG VMU Automated Test Results</h1>
-    <h2>20210826-1319: xrootd-on-3.6 (matyas) </h2>
+    <h2>20210826-1353: xrootd-on-3.6 (matyas) </h2>
     <p>
       <a href="https://opensciencegrid.atlassian.net/issues/?filter=16926">
         Known issues with osg-test
@@ -35,16 +35,14 @@
         <tr>
           <th rowspan="2" id="sort">
             <span id="hide_text">OSG Release -> Upgrade &#9660;</span>
-            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/packages.html" id="sort_link">Sort by Package &#9660;</a>
+            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1353/packages.html" id="sort_link">Sort by Package &#9660;</a>
           </th>
           <th rowspan="2">Packages</th>
           <th colspan="2">EL7</th>
-          <th colspan="1">EL8</th>
         </tr>
         <tr>
           <th> CentOS </th>
           <th> SL </th>
-          <th> CentOS </th>
         </tr>
       </thead>
       <tbody>
@@ -53,31 +51,23 @@
         </tr>
         <tr>
           <th rowspan="2" class="yheader" valign="top"/>
-          3.6 Minefield (opensciencegrid:master)
+          3.6 Minefield (matyasselmeci:pr/SOFTWARE-4604.xrootd-3.6)
           <th class="yheader">
             StashCache (3.6)
             <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/000/osg-test-20210826.log">84 78 10</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1353/000/osg-test-20210826.log">84 79 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2424.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.224</br><b>Job ID:</b> 625986.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Aug 22 00:40:46 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1319/jobs/output-000</br><b>Guest IP</b>: 192.168.122.139</br><b>OSG Test Version</b>: git (0249f43)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 13:29:46</br><b>Run Time</b>: 436.232s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
+                <div class="mouseover"><b>Hostname</b>: e2364.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.164</br><b>Job ID:</b> 626017.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Aug 22 00:40:46 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1353/jobs/output-000</br><b>Guest IP</b>: 192.168.122.135</br><b>OSG Test Version</b>: git (0abe0d1)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 14:03:43</br><b>Run Time</b>: 417.9s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
             <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/002/osg-test-20210826.log">84 78 10</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1353/002/osg-test-20210826.log">84 79 10</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e314.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.114</br><b>Job ID:</b> 625983.0</br><b>Job Serial</b>: 002</br><b>VM Creation Date</b>: Sun Aug 22 01:26:48 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1319/jobs/output-002</br><b>Guest IP</b>: 192.168.122.247</br><b>OSG Test Version</b>: git (0249f43)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 13:28:43</br><b>Run Time</b>: 426.247s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
-              </div>
-            </td>
-            <td align="center" class="result fail">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/004/osg-test-20210826.log">84 78 10</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e311.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.111</br><b>Job ID:</b> 625988.0</br><b>Job Serial</b>: 004</br><b>VM Creation Date</b>: Sun Aug 22 01:03:22 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1319/jobs/output-004</br><b>Guest IP</b>: 192.168.122.126</br><b>OSG Test Version</b>: git (0249f43)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 13:28:51</br><b>Run Time</b>: 449.601s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
+                <div class="mouseover"><b>Hostname</b>: e2392.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.192</br><b>Job ID:</b> 626016.0</br><b>Job Serial</b>: 002</br><b>VM Creation Date</b>: Sun Aug 22 01:26:48 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1353/jobs/output-002</br><b>Guest IP</b>: 192.168.122.79</br><b>OSG Test Version</b>: git (0abe0d1)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 14:02:46</br><b>Run Time</b>: 426.712s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (4)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 155.StartStashCache (03_start_stash_origin_auth): -</br><b>&emsp;FAIL</b> 155.StartStashCache (05_start_stash_cache_auth): -</br><b>&emsp;SKIP</b> 460.StashCache (01_create_files): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (02_xrootd_fetch_from_origin): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (03_http_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (04_xroot_fetch_from_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (05_stashcp): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (06_xrootd_fetch_from_origin_auth): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (07_xrootd_fetch_from_auth_cache): xrootd@stash-origin-auth not running</br><b>&emsp;SKIP</b> 460.StashCache (08_https_fetch_from_auth_cache): xrootd@stash-origin-auth not running</div>
               </div>
             </td>
           </th>
@@ -87,25 +77,17 @@
             <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/001/osg-test-20210826.log">73 95 4</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1353/001/osg-test-20210826.log">76 88 9</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2446.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.246</br><b>Job ID:</b> 625985.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Aug 22 00:40:46 CDT 2021</br><b>VM IO Free Space</b>: 8.4M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1319/jobs/output-001</br><b>Guest IP</b>: 192.168.122.223</br><b>OSG Test Version</b>: git (0249f43)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 13:28:05</br><b>Run Time</b>: 725.817s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (11)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
+                <div class="mouseover"><b>Hostname</b>: e400.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.200</br><b>Job ID:</b> 626014.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Aug 22 00:40:46 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1353/jobs/output-001</br><b>Guest IP</b>: 192.168.122.88</br><b>OSG Test Version</b>: git (0abe0d1)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 14:02:50</br><b>Run Time</b>: 1733.258s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;ERROR</b> 840.StopXrootd (01_stop_xrootd): -</br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;FAIL</b> Cleanup (08_backups): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
               </div>
             </td>
             <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/003/osg-test-20210826.log">73 95 4</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1353/003/osg-test-20210826.log">0 0 0</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e2318.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.118</br><b>Job ID:</b> 625984.0</br><b>Job Serial</b>: 003</br><b>VM Creation Date</b>: Sun Aug 22 01:26:48 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1319/jobs/output-003</br><b>Guest IP</b>: 192.168.122.160</br><b>OSG Test Version</b>: git (0249f43)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 13:28:43</br><b>Run Time</b>: 746.426s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (11)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
-              </div>
-            </td>
-            <td align="center" class="result fail">
-              <div class="data">
-                <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1319/005/osg-test-20210826.log">73 95 4</a>
-                </div>
-                <div class="mouseover"><b>Hostname</b>: e2353.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.153</br><b>Job ID:</b> 625987.0</br><b>Job Serial</b>: 005</br><b>VM Creation Date</b>: Sun Aug 22 01:03:22 CDT 2021</br><b>VM IO Free Space</b>: 8.0M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1319/jobs/output-005</br><b>Guest IP</b>: 192.168.122.27</br><b>OSG Test Version</b>: git (0249f43)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 13:29:39</br><b>Run Time</b>: 814.314s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (11)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 158.StartXrootdTPC (03_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;SKIP</b> 465.XrootdTPC (01_create_macaroons): requires a proxy cert</br><b>&emsp;SKIP</b> 465.XrootdTPC (02_initate_tpc): Macaroon 1 creation failed earlier</div>
+                <div class="mouseover"><b>Hostname</b>: e400.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.200</br><b>Job ID:</b> 626015.0</br><b>Job Serial</b>: 003</br><b>VM Creation Date</b>: Sun Aug 22 01:26:48 CDT 2021</br><b>VM IO Free Space</b>: 8.6M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1353/jobs/output-003</br><b>Guest IP</b>: 192.168.122.116</br><b>OSG Test Version</b>: git (0abe0d1)</br><b>OSG CA Gen Version</b>: git ()</br><b>Start Time</b>: None</br><b>Run Time</b>: 0.0s</br><b>OK Skips:</b> </div>
               </div>
             </td>
           </th>
