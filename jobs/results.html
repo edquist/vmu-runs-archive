@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OSG VMU Automated Test Results</title>
+    <link href="https://osg-sw-submit.chtc.wisc.edu/tests/vmu.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>OSG VMU Automated Test Results</h1>
+    <h2>20210826-1658: xrootd-on-3.6 4 (matyas) </h2>
+    <p>
+      <a href="https://opensciencegrid.atlassian.net/issues/?filter=16926">
+        Known issues with osg-test
+        <br/>
+      </a>
+      <a href="https://jira.opensciencegrid.org/browse/SOFTWARE-2086">
+        OKSKIP tag to test module mapping
+        <br/>
+      </a>
+    </p>
+    <p>
+      <span class="legend pass">PASS</span>
+      <span class="legend fail">FAIL</span>
+      <span class="legend install">INSTALL</span>
+      <span class="legend update">UPDATE</span>
+      <span class="legend cleanup">CLEANUP</span>
+      <span class="legend ignore">IGNORE</span>
+      <span class="legend timeout">TIMEOUT</span>
+      <span class="legend die">DIE</span>
+      <span class="legend none">NONE</span>
+      <p>&#0153; = Yum timeout failure</p>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2" id="sort">
+            <span id="hide_text">OSG Release -> Upgrade &#9660;</span>
+            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1658/packages.html" id="sort_link">Sort by Package &#9660;</a>
+          </th>
+          <th rowspan="2">Packages</th>
+          <th colspan="2">EL7</th>
+        </tr>
+        <tr>
+          <th> CentOS </th>
+          <th> SL </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="divider"/>
+        </tr>
+        <tr>
+          <th rowspan="1" class="yheader" valign="top"/>
+          3.6 Minefield (matyasselmeci:pr/SOFTWARE-4604.xrootd-3.6)
+          <th class="yheader">
+            XRootD (3.6)
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1658/000/osg-test-20210826.log">74 94 5</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e341.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.141</br><b>Job ID:</b> 626063.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Aug 22 00:40:46 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1658/jobs/output-000</br><b>Guest IP</b>: 192.168.122.96</br><b>OSG Test Version</b>: git (8a30a89)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 17:05:23</br><b>Run Time</b>: 1667.73s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;FAIL</b> Cleanup (08_backups): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</div>
+              </div>
+            </td>
+            <td align="center" class="result fail">
+              <div class="data">
+                <div class="link">
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210826-1658/001/osg-test-20210826.log">74 94 5</a>
+                </div>
+                <div class="mouseover"><b>Hostname</b>: e2360.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.160</br><b>Job ID:</b> 626062.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Aug 22 01:26:48 CDT 2021</br><b>VM IO Free Space</b>: 8.2M</br><b>Run Dir</b>: /osgtest/runs/run-20210826-1658/jobs/output-001</br><b>Guest IP</b>: 192.168.122.97</br><b>OSG Test Version</b>: git (8a30a89)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-08-26 17:06:55</br><b>Run Time</b>: 1940.879s</br><b>OK Skips:</b> oasis (6), htcondor (1), globus (2), voms (8), htcondor-ce (15), xrootd (8)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (01_xrdcp_local_to_server): -</br><b>&emsp;FAIL</b> 450.Xrootd (03_xrdcp_server_to_local): -</br><b>&emsp;FAIL</b> 450.Xrootd (04_xrootd_fuse): -</br><b>&emsp;FAIL</b> Cleanup (08_backups): -</br><b>&emsp;SKIP</b> 450.Xrootd (02_xrootd_multiuser): File to check ownership does not exist</div>
+              </div>
+            </td>
+          </th>
+          <tr/>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
