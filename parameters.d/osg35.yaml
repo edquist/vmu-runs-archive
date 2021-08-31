@@ -17,8 +17,8 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - djw8605:master; 3.5; osg-testing
-  - djw8605:master; 3.5; osg-testing, osg-upcoming-testing
+  - opensciencegrid:master; 3.5; osg, devops-itb
+  - opensciencegrid:master; 3.5; osg > osg, devops-itb
 
 package_sets:
   #### Required ####
@@ -29,28 +29,23 @@ package_sets:
   # osg_java - Pre-install OSG java packages (default: False)
   # rng - Install entropy generation package (default: False)
   ##################
-  - label: StashCache
+  - label: Compute Entrypoint
     packages:
-      - stashcache-client
-      - stash-cache
-      - stash-origin
+      - osg-ce-condor
+      - htcondor-ce-view
+      - torque-server
+      - torque-mom
+      - torque-client
+      - torque-scheduler
+      - slurm
+      - slurm-slurmd
+      - slurm-slurmctld
+      - slurm-perlapi
+      - slurm-slurmdbd
+      - mariadb-server
       - globus-proxy-utils
-      - gfal2-util
-      - gfal2-all
-  - label: XRootD
+  - label: Central Collector
     packages:
-      - osg-xrootd-standalone
-      - xrootd-multiuser
-      - xrootd-client
-      - xrootd-fuse
-      - xrootd-scitokens
-      - globus-proxy-utils
-      - osg-gridftp-xrootd
-      - x509-scitokens-issuer-client
-  - label: GridFTP
-    packages:
-      - osg-gridftp
-      - osg-gridftp-xrootd
-      - globus-gass-copy-progs
-      - uberftp
-      - globus-proxy-utils  # proxy required for all transfer tests
+      - htcondor-ce-collector
+      - htcondor-ce-view
+      - fetch-crl
