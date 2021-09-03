@@ -1,1 +1,1 @@
-xrootd 25 v3.1.0-181-gb847060 - 2021-09-03 - log dump fail 2 (matyas)
+xrootd 26 73667e9 (If tokens are relative to `base_path` but we make our tokens absolute paths then `base_path` must be "/", 2021-09-03) (matyas)
