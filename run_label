@@ -1,1 +1,1 @@
-xrootd 26 73667e9 (If tokens are relative to `base_path` but we make our tokens absolute paths then `base_path` must be "/", 2021-09-03) (matyas)
+xrootd 27 0dc640c (Add an "xrootd.seclib" line which is missing from osg-xrootd-standalone, 2021-09-03) (matyas)
