@@ -1,1 +1,1 @@
-xrootd 28 b7c6e21 (just exclude tpc for now, 2021-09-03) (matyas)
+xrootd 29 b59aff2 (Derek says we don't need libXrdSec.so for scitokens, 2021-09-03) (matyas)

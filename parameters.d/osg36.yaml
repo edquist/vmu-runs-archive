@@ -21,6 +21,7 @@ package_sets:
       - osg-xrootd-standalone
       - xrootd-multiuser
       - xrootd-client
-      - xrootd-fuse
+      # - xrootd-fuse
+      # ^^ skip fuse for now; enable it later
       - xrootd-scitokens
       - x509-scitokens-issuer-client
