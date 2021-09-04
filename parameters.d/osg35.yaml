@@ -17,17 +17,17 @@ sources:
   # 3.3-testing and 3-3-upcoming-testing:
   # 3.2; osg, osg-testing > 3.3/osg-testing, osg-upcoming-testing
   ###################
-  - matyasselmeci:pr/quiet; 3.5; osg
-  - matyasselmeci:pr/quiet; 3.5; osg, epel-testing
-  - matyasselmeci:pr/quiet; 3.5; osg-rolling
-  - matyasselmeci:pr/quiet; 3.5; osg-testing
-  - matyasselmeci:pr/quiet; 3.5; osg > osg-testing
-  - matyasselmeci:pr/quiet; 3.4; osg > 3.5/osg
-  - matyasselmeci:pr/quiet; 3.5; osg, osg-upcoming
-  - matyasselmeci:pr/quiet; 3.5; osg, osg-upcoming, epel-testing
-  - matyasselmeci:pr/quiet; 3.5; osg-rolling, osg-upcoming-rolling
-  - matyasselmeci:pr/quiet; 3.5; osg-testing, osg-upcoming-testing
-  - matyasselmeci:pr/quiet; 3.5; osg > osg-testing, osg-upcoming-testing
+  - opensciencegrid:master; 3.5; osg
+  - opensciencegrid:master; 3.5; osg, epel-testing
+  - opensciencegrid:master; 3.5; osg-rolling
+  - opensciencegrid:master; 3.5; osg-testing
+  - opensciencegrid:master; 3.5; osg > osg-testing
+  - opensciencegrid:master; 3.4; osg > 3.5/osg
+  - opensciencegrid:master; 3.5; osg, osg-upcoming
+  - opensciencegrid:master; 3.5; osg, osg-upcoming, epel-testing
+  - opensciencegrid:master; 3.5; osg-rolling, osg-upcoming-rolling
+  - opensciencegrid:master; 3.5; osg-testing, osg-upcoming-testing
+  - opensciencegrid:master; 3.5; osg > osg-testing, osg-upcoming-testing
 
 package_sets:
   #### Required ####
