@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>VMU Run: xrootd 29 b59aff2 (Derek says we don't need libXrdSec.so for scitokens, 2021-09-03) (matyas)</title>
+    <title>VMU Run: xrootd 30 de4f4da (Add ofs.authorize to the config (https://github.com/xrootd/xrootd/tree/master/src/XrdSciTokens#loading-the-plugin-in-the-xrootd-daemon says it's needed), 2021-09-03) (matyas)</title>
     <link href="https://osg-sw-submit.chtc.wisc.edu/tests/vmu.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
     <h1>OSG VMU Automated Test Results</h1>
-    <h2>20210903-2124: xrootd 29 b59aff2 (Derek says we don't need libXrdSec.so for scitokens, 2021-09-03) (matyas) </h2>
+    <h2>20210903-2202: xrootd 30 de4f4da (Add ofs.authorize to the config (https://github.com/xrootd/xrootd/tree/master/src/XrdSciTokens#loading-the-plugin-in-the-xrootd-daemon says it's needed), 2021-09-03) (matyas) </h2>
     <p>
       <a href="https://opensciencegrid.atlassian.net/issues/?filter=16926">
         Known issues with osg-test
@@ -35,7 +35,7 @@
         <tr>
           <th rowspan="2" id="sort">
             <span id="hide_text">Packages &#9660;</span>
-            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210903-2124/results.html" id="sort_link">Sort by Release &#9660;</a>
+            <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210903-2202/results.html" id="sort_link">Sort by Release &#9660;</a>
           </th>
           <th rowspan="2">OSG Release -> Upgrade</th>
           <th colspan="2">EL7</th>
@@ -57,17 +57,17 @@
             <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210903-2124/000/osg-test-20210903.log">93 85 1</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210903-2202/000/osg-test-20210903.log">89 85 4</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e273.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.73</br><b>Job ID:</b> 639185.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Aug 29 00:40:34 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210903-2124/jobs/output-000</br><b>Guest IP</b>: 192.168.122.5</br><b>OSG Test Version</b>: git (b59aff2)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-09-03 21:32:31</br><b>Run Time</b>: 232.493s</br><b>OK Skips:</b> pbs (10), globus (2), htcondor-ce (17), slurm (5), xrootd (1), oasis (6)</br>stashcache (20), authentication (15), htcondor (4), scitokens (1)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 450.Xrootd (02_xrootd_multiuser): -</div>
+                <div class="mouseover"><b>Hostname</b>: e275.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.75</br><b>Job ID:</b> 639202.0</br><b>Job Serial</b>: 000</br><b>VM Creation Date</b>: Sun Aug 29 00:40:34 CDT 2021</br><b>VM IO Free Space</b>: 8.4M</br><b>Run Dir</b>: /osgtest/runs/run-20210903-2202/jobs/output-000</br><b>Guest IP</b>: 192.168.122.5</br><b>OSG Test Version</b>: git (de4f4da)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-09-03 22:12:52</br><b>Run Time</b>: 214.599s</br><b>OK Skips:</b> pbs (10), globus (2), htcondor-ce (17), slurm (5), xrootd (1), oasis (6)</br>stashcache (20), authentication (15), htcondor (4), scitokens (1)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 150.StartXrootd (05_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (02_xrootd_multiuser): -</br><b>&emsp;SKIP</b> 450.Xrootd (01a_xrdcp_local_to_server): Server not running</br><b>&emsp;SKIP</b> 450.Xrootd (03_xrdcp_server_to_local): Server not running</div>
               </div>
             </td>
             <td align="center" class="result fail">
               <div class="data">
                 <div class="link">
-                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210903-2124/001/osg-test-20210903.log">0 0 0</a>
+                  <a href="https://osg-sw-submit.chtc.wisc.edu/tests/20210903-2202/001/osg-test-20210904.log">89 85 4</a>
                 </div>
-                <div class="mouseover"><b>Hostname</b>: e290.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.90</br><b>Job ID:</b> 639184.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Aug 29 01:26:33 CDT 2021</br><b>VM IO Free Space</b>: 8.5M</br><b>Run Dir</b>: /osgtest/runs/run-20210903-2124/jobs/output-001</br><b>Guest IP</b>: 192.168.122.111</br><b>OSG Test Version</b>: git (b59aff2)</br><b>OSG CA Gen Version</b>: git ()</br><b>Start Time</b>: None</br><b>Run Time</b>: 0.0s</br><b>OK Skips:</b> </div>
+                <div class="mouseover"><b>Hostname</b>: e302.chtc.wisc.edu</br><b>Host IP</b>: 128.105.245.102</br><b>Job ID:</b> 639201.0</br><b>Job Serial</b>: 001</br><b>VM Creation Date</b>: Sun Aug 29 01:26:33 CDT 2021</br><b>VM IO Free Space</b>: 8.3M</br><b>Run Dir</b>: /osgtest/runs/run-20210903-2202/jobs/output-001</br><b>Guest IP</b>: 192.168.122.197</br><b>OSG Test Version</b>: git (de4f4da)</br><b>OSG CA Gen Version</b>: git (25869c2)</br><b>Start Time</b>: 2021-09-04 02:13:17</br><b>Run Time</b>: 239.128s</br><b>OK Skips:</b> pbs (10), globus (2), htcondor-ce (17), slurm (5), xrootd (1), oasis (6)</br>stashcache (20), authentication (15), htcondor (4), scitokens (1)</br><b>Failures:</b></br><b>&emsp;FAIL</b> 150.StartXrootd (05_start_xrootd): -</br><b>&emsp;FAIL</b> 450.Xrootd (02_xrootd_multiuser): -</br><b>&emsp;SKIP</b> 450.Xrootd (01a_xrdcp_local_to_server): Server not running</br><b>&emsp;SKIP</b> 450.Xrootd (03_xrdcp_server_to_local): Server not running</div>
               </div>
             </td>
           </th>
