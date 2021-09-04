@@ -1,1 +1,1 @@
-xrootd 30 de4f4da (Add ofs.authorize to the config (https://github.com/xrootd/xrootd/tree/master/src/XrdSciTokens#loading-the-plugin-in-the-xrootd-daemon says it's needed), 2021-09-03) (matyas)
+Don't print output for some system calls (matyas)
