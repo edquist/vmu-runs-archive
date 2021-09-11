@@ -1,1 +1,1 @@
-xrootd 33 1e2d29e (stashcache: as of xcache 2.0.1, stash-cache-auth and stash-origin-auth configs require xrootd-lcmaps, 2021-09-10) (matyas)
+xrootd 34 a739762 (change from /tmp/xrootd to /tmp/xrootd-osgtest; also cleanup the dir, 2021-09-10) (matyas)
