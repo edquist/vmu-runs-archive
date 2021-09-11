@@ -1,1 +1,1 @@
-xrootd 32b add stashcache for bb4b7b6 (paths, 2021-09-09) (matyas)
+xrootd 33 1e2d29e (stashcache: as of xcache 2.0.1, stash-cache-auth and stash-origin-auth configs require xrootd-lcmaps, 2021-09-10) (matyas)
